@@ -68,17 +68,19 @@ These two files contain this translation:
       units:
         MICROMETER: micrometer
 
-Clear the cache and try it out
+Clear the cache, install assets and try it out
 ---------------------------------
 
 Delete all translation files inside of ``/public/js/translation/``.
 
-Clear app cache with this command:
+Clear app cache and install assets with these commands:
 
 .. code-block:: bash
 
 	php bin/console cache:clear
+	php bin/console pim:installer:assets
 
+Clearing cache browser is necessary
 
 Try to create a new attribute in Akeneo frontend with metric as the attribute type.
 
